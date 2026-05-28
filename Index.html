@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excursiones y Transportes Meza</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        :root{
+            --azul:#003f7d;
+            --amarillo:#f4c400;
+            --blanco:#ffffff;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .navbar{
+            background-color: var(--azul);
+        }
+
+        .navbar-brand,
+        .nav-link{
+            color: var(--blanco)!important;
+            font-weight: 600;
+        }
+
+        .hero{
+            background: linear-gradient(rgba(0,63,125,0.75), rgba(0,63,125,0.75)),
+            url('excursiones meza.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+        }
+
+        .hero h1{
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .hero p{
+            font-size: 1.3rem;
+        }
+
+        .btn-principal{
+            background-color: var(--amarillo);
+            color: var(--azul);
+            border: none;
+            font-weight: bold;
+            padding: 14px 28px;
+            border-radius: 10px;
+        }
+
+        .btn-principal:hover{
+            background-color: #ffd633;
+            color: var(--azul);
+        }
+
+        .promo-box{
+            background-color: var(--amarillo);
+            color: var(--azul);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+        }
+
+        .section-title{
+            color: var(--azul);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .card{
+            border: none;
+            box-shadow: 0 0 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+        }
+
+        .icono{
+            font-size: 50px;
+            color: var(--azul);
+        }
+
+        footer{
+            background-color: var(--azul);
+            color: white;
+            padding: 30px 0;
+        }
+
+        .whatsapp-float{
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+        }
+
+        .whatsapp-float i{
+            margin-top: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            Excursiones Meza
+        </a>
+
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-center">
+    <div class="container">
+
+        <img src="excursiones meza.jpg" class="img-fluid mb-4 rounded-circle shadow" width="180">
+
+        <h1>Excursiones y Transportes Meza</h1>
+
+        <p class="mt-4">
+            “No vendemos viajes, construimos sueños”
+        </p>
+
+        <p>
+            Vive experiencias inolvidables en destinos nacionales e internacionales.
+        </p>
+
+        <a href="https://wa.me/50683131251" class="btn btn-principal mt-3">
+            Reserva por WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- PROMOCION -->
+<section class="py-5">
+    <div class="container">
+        <div class="promo-box text-center">
+
+            <h2 class="fw-bold">
+                🎉 OFERTA ESPECIAL DE LANZAMIENTO 🎉
+            </h2>
+
+            <p class="fs-5 mt-3">
+                Las primeras <strong>10 personas</strong> que escriban al WhatsApp
+                <strong>8313-1251</strong> recibirán un
+                <strong>DESCUENTO ESPECIAL</strong> en su próxima excursión.
+            </p>
+
+            <a href="https://wa.me/50683131251?text=Hola,%20quiero%20aprovechar%20el%20descuento%20de%20Excursiones%20Meza"
+               class="btn btn-dark btn-lg mt-3">
+                ¡Quiero mi descuento!
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="py-5 bg-light" id="servicios">
+    <div class="container">
+
+        <h2 class="text-center section-title">
+            Nuestros Servicios
+        </h2>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 p-4 text-center">
+                    <div class="icono">
+                        <i class="bi bi-globe-americas"></i>
+                    </div>
+
+                    <h4 class="mt-3">Viajes Internacionales</h4>
+
+                    <p>
+                        Paquetes completos, hospedaje, vuelos y experiencias únicas
+                        en destinos increíbles.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 p-4 text-center">
+                    <div class="icono">
+                        <i class="bi bi-tree"></i>
+                    </div>
+
+                    <h4 class="mt-3">Excursiones Nacionales</h4>
+
+                    <p>
+                        Tours a playas, volcanes, montañas, senderismo,
+                        aventura y naturaleza.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 p-4 text-center">
+                    <div class="icono">
+                        <i class="bi bi-bus-front"></i>
+                    </div>
+
+                    <h4 class="mt-3">Transporte Turístico</h4>
+
+                    <p>
+                        Servicio seguro y cómodo para grupos, empresas,
+                        familias y eventos especiales.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- NOSOTROS -->
+<section class="py-5" id="nosotros">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+                <img src="excursiones meza.jpg"
+                     class="img-fluid rounded shadow">
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+
+                <h2 class="section-title">
+                    ¿Por qué viajar con nosotros?
+                </h2>
+
+                <p>
+                    En Excursiones y Transportes Meza diseñamos experiencias
+                    personalizadas para personas que aman descubrir nuevos lugares,
+                    vivir aventuras y crear recuerdos inolvidables.
+                </p>
+
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item">
+                        ✅ Atención personalizada
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ Transporte seguro y cómodo
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ Experiencias auténticas
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ Paquetes accesibles
+                    </li>
+
+                    <li class="list-group-item">
+                        ✅ Acompañamiento completo
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 text-center text-white" style="background-color:#003f7d;">
+    <div class="container">
+
+        <h2 class="fw-bold">
+            ¿Listo para tu próxima aventura?
+        </h2>
+
+        <p class="fs-5 mt-3">
+            Viaja con seguridad, comodidad y experiencias inolvidables.
+        </p>
+
+        <a href="https://wa.me/50683131251"
+           class="btn btn-warning btn-lg mt-3 fw-bold">
+            Escríbenos ahora
+        </a>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contacto">
+    <div class="container text-center">
+
+        <h4>
+            Excursiones y Transportes Meza
+        </h4>
+
+        <p>
+            No vendemos viajes, construimos sueños ✈️
+        </p>
+
+        <p>
+            <i class="bi bi-whatsapp"></i>
+            WhatsApp: 8313-1251
+        </p>
+
+    </div>
+</footer>
+
+<!-- BOTON FLOTANTE WHATSAPP -->
+<a href="https://wa.me/50683131251"
+   class="whatsapp-float"
+   target="_blank">
+
+    <i class="bi bi-whatsapp"></i>
+
+</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
